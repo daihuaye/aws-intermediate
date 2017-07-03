@@ -275,9 +275,7 @@ aws lambda invoke \
 output.txt
 ```
 
-Or testing can be done from the web console in Lambda dashboard (blue test button once you navigate to function detailed view):
-
-![](../images/serverless-1.png)
+Or testing can be done from the web console in Lambda dashboard (blue test button once you navigate to function detailed view)
 
 The results should be 200 (ok status) and output in the `output.txt` file. For example, I do NOT have any record yet so my response is this:
 
@@ -431,14 +429,10 @@ curl ${API_URL} \
   }'
 ```
 
-The new items can be observed via HTTP interface by making another GET request... or in web console in DynamoDB dashboard as shown below:
-
-![](../images/serverless-db.png)
+The new items can be observed via HTTP interface by making another GET request... or in web console in DynamoDB dashboard.
 
 
-Yet another option to play with your new REST API resource. A GUI Postman. Here's how the POST request looks like in Postman. Remember to select POST, Raw and JSON (application/json):
-
-![](../images/serverless-postman.png)
+Yet another option to play with your new REST API resource. A GUI Postman. Here's how the POST request looks like in Postman. Remember to select POST, Raw and JSON (application/json)
 
 To delete an item with DELETE HTTP request method, the payload must have a `Key`:
 
